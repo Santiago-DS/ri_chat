@@ -6,7 +6,7 @@ from tqdm import tqdm
 import typer
 
 from ri_chat.config import PROCESSED_DATA_DIR
-from ri_chat.modeling.embeddings import generate_embeddings, load_embedding_model
+from ri_chat.modeling.utils.embeddings import generate_embeddings, load_embedding_model
 from ri_chat.modeling.utils.chroma_collection import (
     DEFAULT_CHROMA_DIR,
     DEFAULT_COLLECTION_NAME,
