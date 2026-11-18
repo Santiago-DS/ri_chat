@@ -15,8 +15,6 @@ def load_embedding_model(
     if not torch.cuda.is_available():
         logger.error("Sem GPU disponível!")
 
-    logger.info(f"Loading embedding model '{model_name}' on '{device}'...")
-
     return SentenceTransformer(model_name, device=device)
 
 
